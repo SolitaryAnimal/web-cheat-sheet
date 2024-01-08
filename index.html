@@ -4,24 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script>
-        const Http = new XMLHttpRequest();
-        const url = 'https://developer.mozilla.org/zh-CN/docs/Web/CSS';
-        Http.open("GET", url);
-        Http.send();
-
-        Http.onreadystatechange = () => {
-            if(this.readyState != 4) return;
-            if(this.status != 200)
-            {
-                document.body.textContent = this.status;
-                return;
-            }
-            document.body.textContent = Http.responseText;
-        }
-    </script>
     </head>
     <body>
-
+        <h1>白嫖的页面!</h1>
     </body>
 </html>
